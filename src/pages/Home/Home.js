@@ -100,7 +100,7 @@ const Home = () => {
 			});
 
 			localStorage.removeItem('token');
-			setTimeout(() => navigate('/'), 1000);
+			navigate('/');
 		}
 	};
 
