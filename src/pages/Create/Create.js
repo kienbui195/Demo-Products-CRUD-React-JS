@@ -33,7 +33,7 @@ export default function Create() {
 		let bodyContent = JSON.stringify(form);
 
 		let reqOptions = {
-			url: 'http://eshop-ecommert.herokuapp.com//api/products/create',
+			url: 'http://eshop-ecommert.herokuapp.com/api/products/create',
 			method: 'POST',
 			headers: headersList,
 			data: bodyContent,

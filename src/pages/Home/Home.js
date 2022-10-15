@@ -69,7 +69,7 @@ const Home = () => {
 		};
 
 		let reqOptions = {
-			url: `http://eshop-ecommert.herokuapp.com//api/products/${id}`,
+			url: `http://eshop-ecommert.herokuapp.com/api/products/${id}`,
 			method: 'DELETE',
 			headers: headersList,
 		};
@@ -136,7 +136,7 @@ const Home = () => {
 					mess: err.message,
 				});
 			});
-	}, []);
+	});
 
 	return loading ? (
 		<Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
