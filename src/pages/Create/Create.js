@@ -33,7 +33,7 @@ export default function Create() {
 		let bodyContent = JSON.stringify(form);
 
 		let reqOptions = {
-			url: 'http://eshop-ecommert.herokuapp.com/api/products/create',
+			url: 'https://eshop-ecommert.herokuapp.com/api/products/create',
 			method: 'POST',
 			headers: headersList,
 			data: bodyContent,
@@ -52,7 +52,7 @@ export default function Create() {
 					status: 'success',
 					mess: 'Tạo mới thành công! Về trang chủ...',
 				});
-				setTimeout(() => navigate('/home'), 1500);
+				setTimeout(() => navigate('/home'), 1000);
 			})
 			.catch(err => {
 				setForm({
@@ -65,7 +65,7 @@ export default function Create() {
 					status: 'success',
 					mess: 'Tạo mới thành công! Về trang chủ...',
 				});
-				setTimeout(() => navigate('/home'), 1500);
+				setTimeout(() => navigate('/home'), 1000);
 
 				//setMess({
 				//	status: 'error',

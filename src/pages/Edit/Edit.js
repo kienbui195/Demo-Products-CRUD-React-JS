@@ -35,7 +35,7 @@ export default function Edit() {
 		let bodyContent = JSON.stringify(form);
 
 		let reqOptions = {
-			url: `http://eshop-ecommert.herokuapp.com/api/products/${form.id}`,
+			url: `https://eshop-ecommert.herokuapp.com/api/products/${form.id}`,
 			method: 'PUT',
 			headers: headersList,
 			data: bodyContent,
@@ -73,7 +73,7 @@ export default function Edit() {
 		};
 
 		let reqOptions = {
-			url: `http://eshop-ecommert.herokuapp.com/api/products/search?keyword=${state}`,
+			url: `https://eshop-ecommert.herokuapp.com/api/products/search?keyword=${state}`,
 			method: 'GET',
 			headers: headersList,
 		};

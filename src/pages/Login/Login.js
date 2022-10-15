@@ -27,12 +27,12 @@ export default function Login() {
 		   }
 		   
 		   let bodyContent = JSON.stringify({
-			 "email" : "admin@codegym.vn",
-			 "password" : "123123"
+			 "email" : `${form.email}`,
+			 "password":  `${form.password}`
 		   });
 		   
 		   let reqOptions = {
-			 url: "http://eshop-ecommert.herokuapp.com/api/login",
+			 url: "https://eshop-ecommert.herokuapp.com/api/login",
 			 method: "POST",
 			 headers: headersList,
 			 data: bodyContent,
@@ -53,7 +53,7 @@ export default function Login() {
 					mess: 'Đăng nhập thành công! Đang chuyển hướng...',
 				});
 				setLoading(false);
-				setTimeout(() => navigate('/home'), 2000);
+				setTimeout(() => navigate('/home'), 1000);
 			})
 			.catch(err => {
 				setLoading(false);

@@ -52,7 +52,7 @@ const Home = () => {
 		};
 
 		let reqOptions = {
-			url: 'http://eshop-ecommert.herokuapp.com/api/products',
+			url: 'https://eshop-ecommert.herokuapp.com/api/products',
 			method: 'GET',
 			headers: headersList,
 		};
@@ -69,7 +69,7 @@ const Home = () => {
 		};
 
 		let reqOptions = {
-			url: `http://eshop-ecommert.herokuapp.com/api/products/${id}`,
+			url: `https://eshop-ecommert.herokuapp.com/api/products/${id}`,
 			method: 'DELETE',
 			headers: headersList,
 		};
