@@ -73,7 +73,7 @@ export default function Login() {
 			<Grid container item>
 				<Grid item xs></Grid>
 				<Grid item xs={5}>
-					<Paper elevation={3} sx={{ padding: 2, marginTop: 10, height: 300 }}>
+					<Paper elevation={3} sx={{ padding: 2, marginTop: 10 }}>
 						{mess && mess.status === 'error' ? <Alert severity='error'>{mess.mess}</Alert> : ''}
 						{mess && mess.status === 'success' ? <Alert severity='success'>{mess.mess}</Alert> : ''}
 						<Box component='form' onSubmit={handleSubmit}>
